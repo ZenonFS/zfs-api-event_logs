@@ -1,6 +1,6 @@
 {
     "name": "zfs-api-event_logs",
-    "version": "0.0.2",
+    "version": "0.0.1",
     "description": "",
     "author": "",
     "private": true,
@@ -8,6 +8,9 @@
     "scripts": {
         "build": "nest build",
         "install": "node install-service.mjs",
+        "postversion": "git push && git push --tags && npm publish",
+        "publish": "git push",
+        "release": "npm version patch -m 'Release %s' && git push && git push --tags",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "nest start",
         "start:dev": "nest start --watch",
