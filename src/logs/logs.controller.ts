@@ -53,7 +53,7 @@ export class LogsController {
         @Res({ passthrough: true }) res: Response,
         @Query('filename') filename: string,
         @Query('startDate') startDate: Date = moment().startOf('day').toDate(),
-        @Query('endDate') endDate: Date = moment().startOf('day').toDate(),
+        @Query('endDate') endDate: Date = moment().endOf('day').toDate(),
     ) {
         const _path = await this.logsService.export(startDate, endDate);
 
