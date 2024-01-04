@@ -17,9 +17,10 @@ import { createReadStream } from 'fs';
 import { join } from 'path';
 import type { Response } from 'express';
 import moment from 'moment';
-import { ApiQuery } from '@nestjs/swagger';
+import { ApiQuery, ApiTags } from '@nestjs/swagger';
 
 @Controller('logs')
+@ApiTags('Logs')
 export class LogsController {
     constructor(private readonly logsService: LogsService) {}
 
