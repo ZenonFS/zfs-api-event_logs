@@ -1,6 +1,6 @@
 {
     "name": "zfs-restapi-labor_binnacle",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "description": "RESTful API for Labor Binnacle",
     "author": "ZenonFS",
     "private": true,
